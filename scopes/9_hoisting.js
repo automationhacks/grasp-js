@@ -60,8 +60,8 @@ a(1);
  }
 
 
- // Ex to show let does not hoist and does not get initialized in leical scope
-
+ // Ex to show let does hoist (adds in enclosing scope) but does not get initialized 
+ 
  function foo(bar) {
     if (bar) {
         console.log(baz); // throws Reference error
