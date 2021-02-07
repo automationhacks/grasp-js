@@ -29,6 +29,10 @@ class InternetPage extends Page {
             this.firstLink.click()
         }
     }
+
+    scrollToPageFooter() {
+        this.pageFooter.scrollIntoView()
+    }
 }
 
 // so that class is accessible by tests
