@@ -1,20 +1,13 @@
 const { expect } = require("chai")
+const internetPage = require('../pageobjects/internet.page')
 
 describe('Test the internet', () => {
-    it('Verify header text', () => {
-       browser.url('/') 
-       let text = $('.heading').getText()
+   it('Verify header text', () => {
+      browser.url('/')
 
-       console.log(text)
-       expect(text).to.equal('Welcome to the-internet')
-    })
+      expect(internetPage.pageHeader.getText()).to.equal('Welcome to the-internet')
+      internetPage.getLiText()
 
-    it('Verify footer text', () => {
-       browser.url('/') 
-       let text = $('#page-footer').getText()
-
-       console.log(text)
-       expect(text).to.contain('Elemental Selenium')
-    })
-
+      expect(internetPage.getSpecificElementTextByIndex(3)).to.contain('Basic Auth')
+   })
 })
