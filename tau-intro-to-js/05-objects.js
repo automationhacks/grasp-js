@@ -27,7 +27,7 @@ cookie.isGlutenFree = true
 console.log(cookie)
 
 // classes
-// introduced to ES5
+// introduced in ECMAScript 2015
 class Cookie {
     constructor(name, isGlutenFree) {
         // properties
