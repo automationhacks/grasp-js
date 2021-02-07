@@ -1,4 +1,3 @@
-const { expect } = require("chai")
 const internetPage = require('../pageobjects/internet.page')
 
 describe('Test the internet', () => {

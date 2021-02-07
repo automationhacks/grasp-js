@@ -5,6 +5,7 @@ class InternetPage extends Page {
     get pageSubHeading() { return $('h2') }
     get pageFooter() { return $('#page-footer') }
     // $ = findElement, $$ = findElements
+
     get parentLinkContainer() { return $('ul') }
     get childLinks() { return this.parentLinkContainer.$$('li') }
     specificChildElement(index) { return this.parentLinkContainer.$(`li:nth-child(${index})`) }
@@ -27,8 +28,6 @@ class InternetPage extends Page {
         if (this.firstLink.isDisplayed()) {
             this.firstLink.click()
         }
-
-        browser.pause(5000)
     }
 }
 

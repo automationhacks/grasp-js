@@ -10,8 +10,16 @@ Under `cd tau-webdriverio`
 npm install
 ```
 
-## To run tests
+## Running tests
+
+All tests
 
 ```zsh
 npm run test
+```
+
+A specific spec
+
+```zsh
+npm run test -- --spec ./test/specs/hover.test.js
 ```
