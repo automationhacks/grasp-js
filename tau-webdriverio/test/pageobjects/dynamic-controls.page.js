@@ -1,9 +1,8 @@
-
 const Page = require('../pageobjects/page')
 
 class DynamicControlsPage extends Page {
     get enabledButton() { return $('#input-example button') }
-    get enabledTextBox() { return $('#input-example input') }
+    get inputEnabledTextBox() { return $('#input-example input') }
     get enabledConfirmationText() { return $('#input-example #message').getText() }
 
     clickEnabledButton() {
@@ -11,12 +10,12 @@ class DynamicControlsPage extends Page {
     }
 
     waitForButtonToEnable() {
-        this.enabledTextBox.waitForEnabled(4000)
+        this.inputEnabledTextBox.waitForEnabled(4000)
     }
 
     waitWhileButtonIsDisplayed() {
         // wait for control to be disabled, since reverse = true is passed
-        this.enabledTextBox.waitForEnabled(4000, true)
+        this.inputEnabledTextBox.waitForEnabled(4000, true)
     }
 }
 
