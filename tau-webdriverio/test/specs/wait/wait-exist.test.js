@@ -1,4 +1,4 @@
-const addRemovePage = require('../pageobjects/add-remove.page')
+const addRemovePage = require('../../pageobjects/add-remove.page')
 
 describe('wait exists tests', () => {
     it('should wait for element to exist', () => {

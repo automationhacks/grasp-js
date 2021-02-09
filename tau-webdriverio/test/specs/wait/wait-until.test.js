@@ -1,4 +1,4 @@
-const dynamicControlsPage = require('../pageobjects/dynamic-controls.page')
+const dynamicControlsPage = require('../../pageobjects/dynamic-controls.page')
 
 describe('wait until tests', () => {
     it('should wait until the text changes', () => {

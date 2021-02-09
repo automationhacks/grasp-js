@@ -4,7 +4,8 @@
   "description": "Test automation university tutorial on WebdriverIO by Julia Pottinger",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/wdio ./wdio.conf.js"
+    "test": "node ./node_modules/.bin/wdio ./wdio.conf.js",
+    "wait": "./node_modules/.bin/wdio ./wdio.conf.js --suite wait"
   },
   "author": "automationhacks",
   "license": "ISC",
